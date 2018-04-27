@@ -5,5 +5,14 @@ server:
   port: 8300
 eureka:
   client:
-    register-with-eureka: true
+    register-with-eureka: false
     fetch-registry: true
+zuul:
+  prefix: /api
+  routes:
+    db_service:
+      path: /db_service/**
+      url: http://localhost:8303
+    order_service:
+      path: /order_sevice/**
+      url: http://localhost:8302
