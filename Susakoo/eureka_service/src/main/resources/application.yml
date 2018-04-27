@@ -16,3 +16,4 @@ zuul:
     order_service:
       path: /order_sevice/**
       url: http://localhost:8302
+
