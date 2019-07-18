@@ -9,17 +9,17 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
-@EnableSwagger2
-@Configuration
+//@EnableSwagger2
+//@Configuration
 public class SwaggerConfig {
 
-    @Bean
-    public Docket serviceApi() {
-    return new Docket(DocumentationType.SWAGGER_2)
-            .select().apis(RequestHandlerSelectors.basePackage("com.susakoo.shop.db_service"))
-            .paths(regex("/rest.*"))
-            .build();
-
-    }
+//    @Bean
+//    public Docket serviceApi() {
+//    return new Docket(DocumentationType.SWAGGER_12)
+//            .select().apis(RequestHandlerSelectors.basePackage("com.susakoo.shop.db_service"))
+//            .paths(regex("/rest.*"))
+//            .build();
+//
+//    }
 }
 
